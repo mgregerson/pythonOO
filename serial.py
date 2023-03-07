@@ -20,17 +20,18 @@ class SerialGenerator:
 
     def __init__(self, start):
         """Create a new Serial Generator using num argument"""
-        self.start = start
-        self.initial_value = start
+        self.current_num = start
+        self.initial_val = start
 
     def generate(self):
         """Prints initial value of start on first call, adds one for subsequent calls"""
-        print(self.start)
-        self.start += 1
+        generated_num = self.current_num
+        self.current_num += 1
+        return generated_num
 
     def reset(self):
         """Resets start number to initial value"""
-        self.start = self.initial_value
+        self.current_num = self.initial_val
 
 
 
