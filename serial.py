@@ -24,13 +24,13 @@ class SerialGenerator:
         self.initial_val = start
 
     def generate(self):
-        """Prints initial value of start on first call, adds one for subsequent calls"""
+        """Returns current number and iterates current number by one for next call"""
         generated_num = self.current_num
         self.current_num += 1
         return generated_num
 
     def reset(self):
-        """Resets start number to initial value"""
+        """Resets current number to initial value"""
         self.current_num = self.initial_val
 
 
