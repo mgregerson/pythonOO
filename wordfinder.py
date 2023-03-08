@@ -15,6 +15,7 @@ class WordFinder:
         for line in word_file:
             curr_word = line.replace("\n", "")
             word_list.append(curr_word)
+            
         return word_list
 
     def len_word_list(self):
